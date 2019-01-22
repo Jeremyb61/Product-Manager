@@ -1,0 +1,14 @@
+<div class="create">
+  <h1>Edit Product</h1>
+  <p>{{ titleError }}</p>
+  <p>{{ priceError }}</p>
+  <p>{{ imageError }}</p>
+
+  {{ editProduct | json }}
+  <form (submit)="edit()">
+    <span>Title: </span> <input type="text" value="editProduct.title" [(ngModel)]="editProduct.title" name="editProduct.title"><br><br>
+    <span>Price: </span> <input type="text" [(ngModel)]="editProduct.price" name="editProduct.price"><br><br>
+    <span>Image url: </span> <input type="text" [(ngModel)]="editProduct.image" name="editProduct.image" ><br><br>
+    <input type="submit">
+  </form>
+</div>

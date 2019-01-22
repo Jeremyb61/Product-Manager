@@ -1,0 +1,30 @@
+.products{
+    margin-top: 20px;
+    min-height:600px;
+    width:1100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.products h1{
+    margin-left:400px;
+}
+.item{
+    padding-top:20px;
+    margin-top:20px;
+    margin-left:20px;
+    height:517px;
+    width:520px;
+    outline:1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+.item .image{
+    margin-left:54px;
+    height:227px;
+    width:400px;
+    outline:1px solid black;
+}
+.item .image img{
+    height:227px;
+    width:400px;
+}

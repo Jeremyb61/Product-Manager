@@ -1,0 +1,14 @@
+<div class="create">
+  <h1>Create a new product</h1>
+  <p>{{ titleError }}</p>
+  <p>{{ priceError }}</p>
+  <p>{{ imageError }}</p>
+
+  <form (submit)="addproduct()">
+    <span>Title: </span> <input type="text" name="newProduct.title" [(ngModel)]="newProduct.title"><br><br>
+    <span>Price: </span> <input type="text" name="newProduct.price" [(ngModel)]="newProduct.price"><br><br>
+    <span>Image url: </span> <input type="text" name="newProduct.image" [(ngModel)]="newProduct.image"><br><br>
+    <input type="submit">
+    <button [routerLink]="['/home']">Home</button>
+  </form>
+</div>
